@@ -1,20 +1,16 @@
 #include <stdio.h>
-/**
- * main - check the code
- *@argc: the number of command line arguments
- *@argv: an array containing the program command line argument
- * Return: Always 0.
- */
-int main(int argc, char *argv[])
-{
-	int i;
+#include "main.h"
 
-	for (i = 0; i < argc; i++)
-	{
-		if (i == 0)
-		{
-			printf("%s\n", argv[i]);
-		}
-	}
+/**
+ * main - prints the name of the program
+ * @argc: number of arguments
+ * @argv: array of arguments
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc __attribute__((unused)), char *argv[])
+{
+	printf("%s\n", *argv);
+
 	return (0);
 }
