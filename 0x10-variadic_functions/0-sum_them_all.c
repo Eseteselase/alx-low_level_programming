@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
-
+/* 0x10-variadic_functions */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list nums;
